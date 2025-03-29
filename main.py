@@ -18,7 +18,7 @@ def unitConverter():
             return f"Your new distance is {newLen} meters."
     def massConvert():
         convertDirect = input("Type k for kilos to pounds or"
-                            "p for pounds to kilos.")
+                            " p for pounds to kilos.")
         if convertDirect == "k":
             givenMass = float(input("What mass? It can have decimals."))
             newMass = givenMass * 2.205
@@ -36,7 +36,7 @@ def unitConverter():
             return f"Your new temperature is {newTemp} degrees Fahrenheit."
         elif convertDirect == "F":
             givenTemp = float(input("What temperature? It can have decimals."))
-            newTemp = (givenTemp - 32) * (5/9)
+            newTemp = float((givenTemp - 32) * (5/9))
             return f"Your new temperature is {newTemp} degrees Celcius."
     def speedConvert(): 
         convertDirect = input("Type mph to convert mph to kph or"
